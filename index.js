@@ -22,6 +22,10 @@ app.get('/', async (req, res) => {
     res.json(projects);
 });
 
+app.get('/favicon.ico', async (req, res) => {
+    res.status(204).end();
+})
+
 process.on('SIGINT', () => {
     mongoose.disconnect();
     console.log('\nMongoose disconnected');
