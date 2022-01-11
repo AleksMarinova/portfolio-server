@@ -11,7 +11,7 @@ const ProjectSchema = new Schema({
         required: true
     },
     github: {   
-        type: String,
+        type: Array,
         required: true
     },
     live: {   
