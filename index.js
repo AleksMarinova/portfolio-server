@@ -28,6 +28,6 @@ app.get('/favicon.ico', async (req, res) => {
 
 process.on('SIGINT', () => {
     mongoose.disconnect();
-    console.log('\nMongoose disconnected');
+    console.log('\nDB disconnected');
     process.exit();
 });
